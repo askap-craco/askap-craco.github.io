@@ -5,5 +5,18 @@ search: false
 
 @charset "utf-8";
 
+$right-sidebar-width: 0px;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// for user defined css...
+.left {
+    width: 48%;
+    float: left;
+}
+
+.right {
+    width: 48%;
+    float: right;
+}

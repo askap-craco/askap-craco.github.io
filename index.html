@@ -1,4 +1,79 @@
 ---
-layout: home
-author_profile: true
+layout: single
+classes: wide
+author_profile: false
+
+# change following block for a different title and image in the home page...
+header_title: Commensal Real-time ASKAP Fast Transients Survey
+excerpt: Exploring the transient radio sky in millisecond timescale
+header:
+    overlay_image: "assets/images/home/ASKAP_night_cut.jpg"
+    caption: "Antennas of CSIRO's Australian SKA Pathfinder (ASKAP) radio telescope. Credit: CSIRO/Alex Cherney"
+    show_overlay_excerpt: true
+
+
+feature_home:
+  - image_path: assets/images/home/ASKAP_square.jpg 
+    image_caption: "Credit: CSIRO"
+    url: "/science#askap"
+    excerpt: "CSIRO's Australian Square Kilometre Array Pathfinder (ASKAP) telescope"
+    btn_label: "Read More >> "
+    btn_class: "btn--primary"
+  - image_path: assets/images/home/CRAFT_A_Color.png
+    url: "/science#craft"
+    excerpt: The Commensal Real-time ASKAP Fast Transients Survey (CRAFT)
+    btn_label: "Read More >>"
+    btn_class: "btn--primary"
+  - image_path: assets/images/home/ASKAP_FRB_square.jpg
+    image_caption: "Credit: OzGrav, Swinburne"
+    url: "/science#frb"
+    excerpt: <br>Fast Radio Bursts (FRBs)<br>
+    btn_label: "Read More >>"
+    btn_class: "btn--primary"
+
+feature_news:
+  - image_path: assets/images/place_holder.png
+    excerpt: <b>This is a news</b><br>We found an alien! We found an alien! We found an alien!<br>We found an alien!<br>We found an alien!
+    url: "/"
+    btn_label: "Read More >>"
+    btn_class: "btn--primary"
+  - image_path: assets/images/place_holder.png
+    excerpt: <b>This is another news</b><br>We found the progenitor of FRBs
+    url: "/"
+    btn_label: "Read More >>"
+    btn_class: "btn--primary"
 ---
+<p><font size="4">
+    We acknowledge the Wajarri Yamatji people as the traditional owners of Inyarrimanha Ilgari Bundara, the CSIRO Murchison Radio-astronomy Observatory, where ASKAP is based.
+  </font></p>
+
+<p>
+    Here are some texts...
+</p>
+
+<div style="margin-left: 5%; margin-right: 5%;">
+    {% include feature_row id="feature_home" %}
+    <!-- to set three figures in one row, do not set any type here... -->
+</div>
+
+<!-- devide the whole page into two parts -->
+<div class="left">
+    <h2> Recent News </h2>
+    {% include feature_row id="feature_news" type="left" %}
+</div>
+
+<div class="right">
+    <h2> New FRBs </h2>
+    <font size="3">
+        <p>FRB230401a FRB230401a FRB230401a</p>
+        <p>FRB230401b FRB230401b FRB230401b</p>
+        <p>FRB230401c FRB230401c FRB230401c</p>
+    </font>
+
+    <h2> Meetings </h2>
+    <font size="3">
+        <p>FRB 2023 on the Moon</p>
+        <p>FRB 2024 on the Mars</p>
+        <p>FRB 2025 on the Jupiter</p>
+    </font>
+</div>
