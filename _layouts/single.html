@@ -39,14 +39,20 @@ layout: default
 
       <section class="page__content e-content" itemprop="text">
         {% if page.toc %}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+        <div style="width:70%;float:left">
+          {{ content }}
+        </div>
+        <div style="width:25%;float:right;">
+          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}" style="position:fixed">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
             </nav>
           </aside>
+        </div>
+        {% else %}
+          {{ content }}
         {% endif %}
-        {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
@@ -60,7 +66,7 @@ layout: default
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
+      <!-- {% include post_pagination.html %} -->
     </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
@@ -69,7 +75,7 @@ layout: default
   </article>
 
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
-  {% if page.id and page.related and site.related_posts.size > 0 %}
+  <!-- {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
       <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
       <div class="grid__wrapper">
@@ -77,9 +83,9 @@ layout: default
           {% include archive-single.html type="grid" %}
         {% endfor %}
       </div>
-    </div>
+    </div> -->
   {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
-  {% elsif page.id and page.related %}
+  <!-- {% elsif page.id and page.related %}
     <div class="page__related">
       <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
       <div class="grid__wrapper">
@@ -91,5 +97,5 @@ layout: default
         {% endfor %}
       </div>
     </div>
-  {% endif %}
+  {% endif %} -->
 </div>

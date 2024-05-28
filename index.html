@@ -1,4 +1,117 @@
 ---
-layout: home
-author_profile: true
+layout: single
+classes: wide
+author_profile: false
+
+# change following block for a different title and image in the home page...
+header_title: Commensal Real-time ASKAP Fast Transients Survey
+excerpt: Exploring the transient radio sky in millisecond timescale
+header:
+    overlay_image: "assets/images/home/ASKAP_night_cut.jpg"
+    caption: "Antennas of CSIRO's Australian SKA Pathfinder (ASKAP) radio telescope. Credit: CSIRO/Alex Cherney"
+    show_overlay_excerpt: true
+
+
+feature_home:
+  - image_path: assets/images/home/ASKAP_square.jpg 
+    image_caption: "Credit: CSIRO"
+    url: "/#askap"
+    excerpt: "CSIRO's Australian Square Kilometre Array Pathfinder (ASKAP) telescope"
+    btn_label: "Learn More >> "
+    btn_class: "btn--primary"
+  - image_path: assets/images/home/CRAFT_A_Color.png
+    url: "/#craft"
+    excerpt: The Commensal Real-time ASKAP Fast Transients Survey (CRAFT)
+    btn_label: "Learn More >>"
+    btn_class: "btn--primary"
+  - image_path: assets/images/home/ASKAP_FRB_square.jpg
+    image_caption: "Credit: OzGrav, Swinburne"
+    url: "/#frb"
+    excerpt: <br>Fast Radio Bursts (FRBs)<br>
+    btn_label: "Learn More >>"
+    btn_class: "btn--primary"
+
+# change the following `feature_news` to change news block
+feature_news:
+  - image_path: /assets/images/media/conv_frb220610.jpg
+    excerpt: <b>A luminous fast radio burst that probes the Universe at redshift 1</b><br>In new research published in [Science](https://www.science.org/doi/10.1126/science.adf2678), we have found the most distant fast radio burst ever detected.
+    url: "https://theconversation.com/we-traced-a-powerful-radio-signal-to-the-most-distant-source-yet-a-galaxy-billions-of-lightyears-away-214553"
+    btn_label: "Read More >>"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/media/conv_frb_h1.jpg
+    excerpt: <b>WALLABY Pilot Survey - HI in the Host Galaxy of a Fast Radio Burst</b><br>A study of the slow-moving, star-forming gas in the same galaxy found to host an FRB has been published in [ApJ](https://doi.org/10.3847/1538-4357/acc1e3)
+    url: "https://theconversation.com/astronomers-detected-two-major-targets-with-a-single-telescope-a-mysterious-signal-and-its-source-galaxy-203557"
+    btn_label: "Read More >>"
+    btn_class: "btn--primary"
 ---
+
+<div>
+  <font size="4">
+    CRAFT is the high-time resolution survey for fast radio transients on the 36-element, 30 square degree field of view <a href="https://www.atnf.csiro.au/projects/askap/index.html">Australian SKA Pathfinder</a>.  Its aim is to survey the Universe for impulsive astrophysical phenomena at radio frequencies between about 700 and 1500 MHz.  A particular target of interest is the newly-discovered class of highly-luminous Fast Radio Bursts.  The cause of FRB emission is a topic of hot debate, as are their progenitor objects.  FRBs occur at cosmological distances , and their radiation, which is subject to dispersion by the tenuous matter in the ionized Inter-Galactic Medium, hold the potential to probe the structure, physical properties and evolution of the IGM in a manner that has not previously been possible.
+  </font>
+</div>
+
+<div class="left">
+  <h2> Recent News </h2>
+  {% include feature_row id="feature_news" type="left" %}
+</div>
+
+<div class="right">
+  <h2> New Discoveries </h2>
+  <font size="3">
+      <p>ASKAP Detection of a repeating FRB <b><a href="/askap-craco-frb240216/">READ MORE>>></a></b></p>
+      <p>ASKAP Detection of FRB 191001 <b><a href="/askap-frb191001/">READ MORE>>></a></b></p>
+      <p>ASKAP Detection of FRB 190701 <b><a href="/askap-frb190701/">READ MORE>>></a></b>
+  </font>
+
+  <h2> Upcoming Meetings </h2>
+  <font size="3">
+      <p><a href="https://events.asiaa.sinica.edu.tw/workshop/20240624/index.php">FRB Taiwan 2024 on “Localization of fast radio bursts"</a>, 24-27 June 2024, Yilan
+      </p>
+      <p>IAU General Assembly, 6-15 Aug 2024, Cape Town</p>
+      <p>FRB 2024, 4-8 Nov 2024, Khao Lak</p>
+  </font>
+</div>
+
+<!-- devide the whole page into two parts -->
+
+<div style="margin-left: 5%; margin-right: 5%;">
+    {% include feature_row id="feature_home" %}
+    <!-- to set three figures in one row, do not set any type here... -->
+</div>
+
+<a name="askap"></a>
+<h3>CSIRO's ASKAP Radio Telescope</h3>
+
+<font size="3">
+CSIRO's ASKAP radio telescope, is situated at the Inyarrimanha Ilgari Bundara, the CSIRO Murchison Radio-astronomy Observatory on Wajarri Yamaji Country in the Murchison region of Western Australia, about 800 km north of Perth. ASKAP uses novel technology to achieve extremely high survey speed, making it one of the best instruments in the world for mapping the sky at radio wavelengths.
+<a href="https://www.atnf.csiro.au/projects/askap/index.html">Learn More >></a>
+</font>
+
+<div style="margin-left: 20%; margin-right: 20%;">
+  {% include video id="50121809" provider="vimeo" %}
+</div>
+
+
+<a name="craft"></a>
+<h3>ASKAP CRAFT Survey</h3>
+
+<font size="3">
+CRAFT is the high-time resolution survey for fast radio transients on the 36-element, 30 square degree field of view Australian SKA Pathfinder.  Its aim is to survey the Universe for impulsive astrophysical phenomena at radio frequencies between about 700 and 1500 MHz.  A particular target of interest is the newly-discovered class of highly-luminous Fast Radio Bursts.  
+</font>
+
+<div style="margin-left: 20%; margin-right: 20%;">
+  {% include video id="293893521" provider="vimeo" %}
+</div>
+
+<a name="frb"></a>
+<h3>FRBs</h3>
+
+<font size="3">
+In radio astronomy, a fast radio burst (FRB) is a transient radio pulse of length ranging from a fraction of a millisecond to 3 seconds, caused by some high-energy astrophysical process not yet understood. Astronomers estimate the average FRB releases as much energy in a millisecond as the Sun puts out in three days.
+</font>
+
+<div style="margin-left: 20%; margin-right: 20%;">
+  {% include video id="293891308" provider="vimeo" %}
+</div>
+
