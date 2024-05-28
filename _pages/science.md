@@ -23,7 +23,7 @@ CSIRO's ASKAP radio telescope, is situated at the Inyarrimanha Ilgari Bundara, t
 <a name="craft"></a>
 ### ASKAP CRAFT Survey
 
-CRAFT is the high-time resolution survey for fast radio transients on the 36-element, 30 deg2 field of view Australian SKA Pathfinder.  Its aim is to survey the Universe for impulsive astrophysical phenomena at radio frequencies between about 700 and 1500 MHz.  A particular target of interest is the newly-discovered class of highly-luminous Fast Radio Bursts.  
+CRAFT is the high-time resolution survey for fast radio transients on the 36-element, 30 square degree field of view Australian SKA Pathfinder.  Its aim is to survey the Universe for impulsive astrophysical phenomena at radio frequencies between about 700 and 1500 MHz.  A particular target of interest is the newly-discovered class of highly-luminous Fast Radio Bursts.  
 
 {% include video id="293893521" provider="vimeo" %}
 
