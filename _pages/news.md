@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide 
-permalink: /news
+permalink: /news/
 
 author_profile: false
 ---
