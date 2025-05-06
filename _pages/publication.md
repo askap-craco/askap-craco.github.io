@@ -36,7 +36,7 @@ feature_latest:
 
 <h4> CRAFT Collaboration Full Publication </h4>
 <font size="3.5">
-<p>See a full list of CRAFT Collaboration publacations in our <a href="https://ui.adsabs.harvard.edu/public-libraries/Y_-bQEpGR5iS9eFI66hamw">ADS Library</a></p>
+<p>See a full list of CRAFT Collaboration publications in our <a href="https://ui.adsabs.harvard.edu/public-libraries/Y_-bQEpGR5iS9eFI66hamw">ADS Library</a></p>
 </font>
 
 <font size="3">
