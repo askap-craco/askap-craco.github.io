@@ -34,7 +34,7 @@ feature_latest:
     {% include feature_row id="feature_latest" %}
 </div>
 
-<h4> CRAFT Collaboration Full Publication </h4>
+<h4> CRAFT Collaboration Full Publication List </h4>
 <font size="3.5">
 <p>See a full list of CRAFT Collaboration publications in our <a href="https://ui.adsabs.harvard.edu/public-libraries/Y_-bQEpGR5iS9eFI66hamw">ADS Library</a></p>
 </font>
